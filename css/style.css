@@ -1,0 +1,57 @@
+@font-face{
+    font-family: Bankay;
+    src: url(../fonts/Bankay.ttf);
+}
+body{
+    background-color: #ffcd94;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+a,a:visited,a:active,a:hover{
+    text-decoration:none;
+    color:black;
+}
+.main{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    margin: 0 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:20px;
+}
+.title{
+    font-family: Bankay, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 45px;
+    margin: 20px;
+}
+.desc{
+    margin:auto;
+    text-align:center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #eac086;
+}
+.content{
+    padding: 20px;
+    text-align:justify;
+}
+.footer{
+    width:100%;
+    padding:10px;
+    text-align:center;
+    position:absolute;
+    bottom: 0;

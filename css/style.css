@@ -3,50 +3,47 @@
     src: url(../fonts/Bankay.ttf);
 }
 body{
-    background-color: #ffcd94;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 a,a:visited,a:active,a:hover{
     text-decoration:none;
     color:black;
-}
-.main{
-    position: absolute;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 80%;
-    margin: 0 10%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		     }
+.head-fon{
+    background-image:url('../img/back.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .head{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:20px;
+    flex-direction: column;
+    align-items:center;
+    height:300px;
+    background-color: rgba(255,205,148,0.9);
 }
 .title{
     font-family: Bankay, sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 45px;
-    margin: 20px;
+    width:280px;
 }
 .desc{
     margin:auto;
     text-align:center;
+    width:280px;
 }
 .menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 10px;
-    background-color: #eac086;
+    background-color: #ffad60;
 }
 .content{
-    padding: 20px;
+    padding: 20px 100px;
     text-align:justify;
 }
 .footer{

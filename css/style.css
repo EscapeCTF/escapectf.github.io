@@ -30,6 +30,9 @@ a,a:visited,a:active,a:hover{
     font-size: 45px;
     width:280px;
 }
+.title:hover{
+    text-shadow: 0 0 1px black;
+}
 .desc{
     margin:auto;
     text-align:center;
@@ -39,8 +42,15 @@ a,a:visited,a:active,a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px;
+    flex-wrap:wrap;
     background-color: #ffad60;
+}
+.menu a{
+    padding: 10px;
+}
+.menu a:hover{
+    box-shadow: 0 0 5px #cb9d30;
+    cursour: pointer;
 }
 .content{
     padding: 20px 100px;

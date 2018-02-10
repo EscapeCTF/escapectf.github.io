@@ -36,11 +36,17 @@ menu.innerHTML = ''
 var footer = document.getElementById('footer');
 footer.innerHTML = ''
     + '<div class="social">'
-    + '<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>'
-    + '<script src="//yastatic.net/share2/share.js"></script>'
     + '<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter" data-title="Escape CTF" data-url="http://escapectf.github.io/" data-description="Командные соревнования по информационной безопасности для школьников Escape CTF">'
     + '</div>'
     + '</div>'
     + '<div>'
     + '© СГУГиТ 2018'
     + '</div>';
+//Share Yandex
+var share = document.createElement('script');
+share.src = '//yastatic.net/es5-shims/0.0.2/es5-shims.min.js';
+document.body.appendChild(share);
+
+var share2 = document.createElement('script');
+share2.src = '//yastatic.net/share2/share.js';
+document.body.appendChild(share2);

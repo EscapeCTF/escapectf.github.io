@@ -26,7 +26,7 @@ headBack.innerHTML = ''
 // Menu
 var menu = document.getElementById('menu');
 menu.innerHTML = ''
-    + '<a href="#">Регистрация</a>'
+    + '<a href="https://docs.google.com/forms/d/e/1FAIpQLSc7065qVMlNONyhxzQnQOn6yMU_76ipJdTGDApJeFweB6YhYg/viewform?usp=sf_link">Регистрация</a>'
     + '<a href="#">Положение</a>'
     + '<a href="org.html">Организаторы</a>'
     + '<a href="result.html">Результаты</a>'

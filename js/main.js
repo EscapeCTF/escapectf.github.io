@@ -1,4 +1,13 @@
 //Head
+
+//Favicon
+var fav = document.createElement('link');
+fav.setAttribute('rel','shortcut icon');
+fav.setAttribute('href','img/back.jpg');
+fav.setAttribute('type','image/png');
+document.getElementsByTagName('head')[0].appendChild(fav);
+
+//Meta
 var ogT = document.createElement('meta');
 ogT.setAttribute('property','og:title');
 ogT.content = 'Escape CTF';
@@ -14,6 +23,7 @@ ogU.setAttribute('property','og:url');
 ogU.content = 'http://escapectf.github.io/';
 document.getElementsByTagName('head')[0].appendChild(ogU);
 
+//Back Image
 var headBack = document.getElementById('head');
 headBack.innerHTML = '' 
     + '<div class="head">'

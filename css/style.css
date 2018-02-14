@@ -2,26 +2,48 @@
     font-family: Bankay;
     src: url(../fonts/Bankay.ttf);
 }
+@media screen and (min-width:900px){
+    .head-back{
+	width:50%;
+    }
+}
+@media screen and (min-width:500px){
+    .head-back{
+	background-position: right;
+    }
+    .head{
+	align-items:flex-start;
+    }
+}
+@media screen and (max-width:500px){
+    .head-back{
+	background-position: center;
+    }
+    .head{
+	align-items:center;
+    }
+}
 body{
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #000000;
+    color:white;
 }
 a,a:visited,a:active,a:hover{
     text-decoration:none;
-    color:black;
-		     }
+    color:white;
+}
 .head-back{
-    background-image:url('../img/back.png');
-    background-size: 100% auto;
+    background-image:url('../img/back.jpg');
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    margin:auto;
 }
 .head{
     display: flex;
     flex-direction: column;
-    align-items:center;
     height:300px;
-    background-color: rgba(255,205,148,0.9);
+    background-color: rgba(32,31,31,0.4);
 }
 .title{
     font-family: Bankay, sans-serif;
@@ -34,7 +56,6 @@ a,a:visited,a:active,a:hover{
     text-shadow: 0 0 1px black;
 }
 .desc{
-    margin:auto;
     text-align:center;
     width:280px;
 }
@@ -43,19 +64,43 @@ a,a:visited,a:active,a:hover{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap:wrap;
-    background-color: #ffad60;
+    background-color: #454141;
 }
 .menu a{
     padding: 10px;
 }
 .menu a:hover{
-    box-shadow: -5px 0 5px -4px #cb9d30,
-    5px 0 5px -4px #cb9d30;
+    box-shadow: -5px 0 5px -4px #6a6666,
+    5px 0 5px -4px #6a6666;
     cursour: pointer;
 }
 .content{
     padding: 20px 100px;
     text-align:justify;
+}
+.contacts{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    line-height:1.5;
+    margin:30px 0;
+}
+.s-network{
+    flex-direction:row;
+}
+.network{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin:5px;
+}
+.network a{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.network img{
+    margin-right: 10px;
 }
 .footer{
     width:100%;

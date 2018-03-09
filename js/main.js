@@ -37,7 +37,7 @@ headBack.innerHTML = ''
 var menu = document.getElementById('menu');
 menu.innerHTML = ''
     + '<a href="https://docs.google.com/forms/d/e/1FAIpQLSc7065qVMlNONyhxzQnQOn6yMU_76ipJdTGDApJeFweB6YhYg/viewform?usp=sf_link">Регистрация</a>'
-    + '<a href="files/polozenie_Escape_CTF.docx">Положение</a>'
+    + '<a href="files/polozenie_Escape_CTF.pdf">Положение</a>'
     + '<a href="org.html">Организаторы</a>'
     + '<a href="result.html">Результаты</a>'
     + '<a href="contacts.html">Контакты</a>';

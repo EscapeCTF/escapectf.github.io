@@ -1,0 +1,170 @@
+@font-face{
+    font-family: Bankay
+    src: url('../fonts/Bankay.ttf')
+}
+
+@keyframes logotext {
+	0% {
+		text-shadow:-10px 0 red,10px 0 blue,0 0 skyblue
+		-webkit-transform:skewX(40deg)
+		transform:skewX(40deg)
+	}
+	4% {
+		-webkit-transform:skewX(0deg)
+		transform:skewX(0deg)
+		text-shadow:none
+	}
+	to {
+		-webkit-transform:skewX(0deg)
+		transform:skewX(0deg)
+	}
+}
+
+*:focus
+	outline 0
+	box-shadow 0 0 5px white
+
+html
+	margin 0
+	padding 0
+	height 100%
+	overflow-x hidden
+
+body
+	background black
+	color white
+	font-family 'Roboto Condensed', sans-serif
+	display flex
+	flex-direction column
+	align-items center
+	overflow-x hidden
+	padding 0 50px
+	
+	@media (max-width 768px)
+		padding 0 10px
+
+header
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	height 100vh
+	position relative
+	text-align center
+	overflow hidden
+
+	& img
+		position absolute
+		height 100%
+		z-index -1
+		filter brightness(45%)
+
+	& h1
+		font-family Bankay, sans-serif
+		font-size 3em
+		animation logotext 3s infinite ease
+
+	& h3
+		max-width 285px
+
+	& nav
+		display flex
+		flex-direction row
+		justify-content center
+		flex-wrap wrap
+		width 100%
+		flex-wrap wrap
+		margin-top 20px
+
+main
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+
+section
+	margin 50px 0
+	max-width 1440px
+	text-align center
+	
+	@media (max-width 768px)
+		margin 20px 0
+
+.btn
+	color white
+	text-decoration none
+	border 0
+	border 2px solid white
+	padding 10px 15px
+	min-width 120px
+	text-align center
+	margin 5px
+
+	&:hover
+		background white
+		color black
+
+.row
+	display flex
+	flex-direction row
+	
+	@media (max-width 768px)
+		flex-direction column
+	
+	& img
+		@media (max-width 410px)
+			max-width 100%
+			
+.desc
+	background-image url('../img/glitch.gif')
+	box-shadow 0 0 150px 130px inset #000
+	
+	& p
+		padding 10px
+		background rgba(0,0,0,0.9)
+		width 100%
+		text-align left
+		font-size 1.3rem
+		
+		@media (max-width 768px)
+			padding 0
+			text-align justify
+			font-size 1rem
+			
+#contacts
+	display flex
+	flex-direction row
+	justify-content space-between
+	text-align left
+	
+	@media (max-width 1000px)
+		flex-direction column
+		text-align center
+		
+	& a
+		display block
+		width 40px
+		height 40px
+		border-radius 10px
+		margin 0 5px
+		
+	& iframe
+		margin-left 50px
+
+		@media (max-width 1000px)
+			display none
+
+.contacts__img
+	height 250px
+	
+	@media (max-width 1000px)
+		display none
+		
+.contacts__links
+	display flex
+	flex-direction row
+	margin-left -5px
+	
+	@media (max-width 1000px)
+		margin-left 0
+		justify-content center

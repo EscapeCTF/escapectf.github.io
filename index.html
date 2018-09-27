@@ -1,23 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <title>Escape CTF - Главная</title>
-  </head>
-  <body>
-    <div class="head-back" id="head"></div>
-    <div id="menu" class="menu"></div>
-    <div class="content">
-      Командные соревнования по информационной безопасности для школьников Escape CTF проводятся в ФГБОУ ВО «Сибирский государственный университет геосистем и технологий» на базе кафедры Информационной безопасности. Соревнования проводятся по принципам игры CTF в формате task-based.
-      <br>
-      <br>
-      Формат task-based (или jeopardy) - это когда игрокам предоставляется набор тасков (заданий), к которым требуется найти ответ и отправить его. Ответ представляет собой флаг: это может быть набор символов или произвольная фраза. За верно выполненное задание команда получает определенное количество очков. Чем задание сложнее, тем больше очков будет полагаться за правильный ответ. Все задания в CTF-соревнованиях формата task-based можно разделить на несколько категорий: например, это задачи на администрирование, криптографию и стеганографию, задачи на нахождение веб-уязвимостей и любимые многими задания категории joy — развлекательные задачи разнообразной тематики.
-    </div>
-    <div id="footer" class="footer"></div>
-    <script src="js/main.js"></script>
-  </body>
+<html lang="ru">
+<head>
+	<title>Escape CTF - соревнования по информационной безопасности</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="Escape CTF">
+	<meta property="og:url" content="http://escapectf.github.io/">
+	<meta property="og:description" content="Командные соревнования по информационной безопасности для школьников Escape CTF">
+	<link rel="shortcut icon" href="img/back.jpg" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header role="banner">
+		<img src="img/back.jpg">
+		<h1>Escape CTF</h1>
+		<h3>Открытые городские командные соревнования по информационной безопасности для школьников</h3>
+		<nav role="navigation">
+			<a href="#" class="btn">Регистрация</a>
+			<a href="files/polozenie_Escape_CTF.pdf" class="btn">Положение</a>
+			<a href="img/result.jpg" class="btn">Результаты</a>
+			<a href="#contacts" class="btn">Контакты</a>
+		</nav>
+	</header>
+	<main>
+		<section class="row">
+			<div class="desc">
+				<p>Командные соревнования по информационной безопасности для школьников Escape CTF проводятся в ФГБОУ ВО «Сибирский государственный университет геосистем и технологий» на базе кафедры Информационной безопасности. Соревнования проводятся по принципам игры CTF в формате task-based.</p>
+				<p>Формат task-based (или jeopardy) - это когда игрокам предоставляется набор тасков (заданий), к которым требуется найти ответ и отправить его. Ответ представляет собой флаг: это может быть набор символов или произвольная фраза. За верно выполненное задание команда получает определенное количество очков. Чем задание сложнее, тем больше очков будет полагаться за правильный ответ. Все задания в CTF-соревнованиях формата task-based можно разделить на несколько категорий: например, это задачи на администрирование, криптографию и стеганографию, задачи на нахождение веб-уязвимостей и любимые многими задания категории joy — развлекательные задачи разнообразной тематики.</p>
+			</div>	
+			<div data-aos="fade-left">
+				<div>
+					<h2>Организаторы</h2>
+					<div>
+						<img src="img/sgugit.png" alt="СГУГиТ">
+						<img src="img/d34dl1n3.png" alt="d34dl1n3">
+					</div>
+				</div>
+				<div>
+					<h2>Спонсоры соревнований</h2>
+					<div>
+						<img src="img/atlas.png" alt="НТЦ Атлас">
+						<img src="img/dlink.png" alt="D-Link">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contacts">
+			<div>
+				<h2>Контакты</h2>
+				<p>
+					Звягинцева Полина Александровна<br>
+					Тел: +79231357978<br>
+					E-mail: polinasgugit@mail.ru
+				</p>
+				<p>
+					Адрес проведения соревнований<br>
+					г. Новосибирск, ул. Пархоменко 9 
+				</p>
+				<div class="contacts__links">
+					<a href="https://vk.com/escapectf"><img width="40" height="40" src="img/vk.svg"></a>
+					<a href="https://t.me/escapectf"><img width="40" height="40" src="img/telegram.svg"></a>
+				</div>
+				<img class="contacts__img" src="img/d34.gif">
+			</div>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1361.1790458449077!2d82.86282747828744!3d54.986756299700296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe6cc8bc2909b%3A0xec10c2fd90c04c3a!2z0J_Qu9Cw0L3QtdGC0LDRgNC40Lk!5e0!3m2!1sru!2sru!4v1518620669946" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</main>
+	<footer role="contentinfo">&copy; СГУГиТ 2018</footer>
+	<script>
+		AOS.init();
+	</script>
+</body>
 </html>

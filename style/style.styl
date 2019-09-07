@@ -1,23 +1,8 @@
+@import 'glitch.css'
+
 @font-face{
     font-family: Bankay
     src: url('../fonts/Bankay.ttf')
-}
-
-@keyframes logotext {
-	0% {
-		text-shadow:-10px 0 red,10px 0 blue,0 0 skyblue
-		-webkit-transform:skewX(40deg)
-		transform:skewX(40deg)
-	}
-	4% {
-		-webkit-transform:skewX(0deg)
-		transform:skewX(0deg)
-		text-shadow:none
-	}
-	to {
-		-webkit-transform:skewX(0deg)
-		transform:skewX(0deg)
-	}
 }
 
 *:focus
@@ -62,7 +47,6 @@ header
 	& h1
 		font-family Bankay, sans-serif
 		font-size 3em
-		animation logotext 3s infinite ease
 		
 		@media (max-width 768px)
 			margin 0
